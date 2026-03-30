@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { Link, usePage } from '@inertiajs/vue3';
-import { BookOpen, FolderGit2, Search, Folder, Blocks, ShoppingCart, FileClock } from 'lucide-vue-next';
+import { Blocks, ShoppingCart, FileClock } from 'lucide-vue-next';
+import { computed } from 'vue';
 import AppLogo from '@/components/AppLogo.vue';
-import NavFooter from '@/components/NavFooter.vue';
 import NavMain from '@/components/NavMain.vue';
 import NavUser from '@/components/NavUser.vue';
 import {
@@ -16,7 +16,6 @@ import {
 } from '@/components/ui/sidebar';
 import type { NavItem } from '@/types';
 
-import { computed } from 'vue';
 
 
 const page = usePage();
